@@ -1,0 +1,1305 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+}
+
+.page-cadaster{
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+.page-cadaster header{
+    width: 100%;
+    height: 22vh;
+
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    
+    background-color: black;
+    border-bottom: solid .8vh rgb(255, 0, 0);
+}
+
+.page-cadaster header .logo{
+    width: 15%;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.page-cadaster header .logo img{
+    width: 16vh;
+    height: 95%;
+    margin-left: 9vh;
+    border-radius: 50%;
+    border: solid .2vh white;
+}
+
+.page-cadaster header .title{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+
+    letter-spacing: 1vh;
+    word-spacing: 1vh;
+    font-size: 3.5vh;
+    color: white;
+    text-shadow: 0.2vh 0.2vh .4vh rgba(255, 255, 255, 0.567);
+}
+
+.container-banner-form{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.deco-cadaster-top{
+    width: 35vh;
+    height: 35vh;
+    z-index: -1;
+
+    position: absolute;
+    bottom: -10vh;
+    right: 70vh;
+    transform: rotate(-80deg);
+    filter: grayscale(100%);
+    opacity: .1;
+}
+
+.deco-cadaster-top2{
+    width: 35vh;
+    height: 35vh;
+    z-index: -1;
+
+    position: absolute;
+    bottom: 40vh;
+    right: 65vh;
+    transform: rotate(-80deg);
+    filter: grayscale(100%);
+    opacity: .1;
+}
+
+.deco-cadaster-bottom{
+    width: 55vh;
+    height: 55vh;
+
+    position: absolute;
+    z-index: -1;
+    top: -27vh;
+    left: -25vh;
+    transform: rotate(80deg);
+    filter: grayscale(100%);
+    opacity: .1;
+}
+
+.deco-cadaster-bottom2{
+    width: 55vh;
+    height: 55vh;
+
+    position: absolute;
+    z-index: -1;
+    top: 30vh;
+    left: -25vh;
+    transform: rotate(80deg);
+    filter: grayscale(100%);
+    opacity: .1;
+}
+
+
+.page-cadaster .container-banner{
+    width: 60%;
+    height: 80vh;
+}
+
+.page-cadaster .container-banner .content-banner{
+    width: 100%;
+    height: 85%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.page-cadaster .container-banner .content-banner img{
+    filter: grayscale(100%);
+    opacity: .15;
+    width: 80vh;
+    height: 60vh;
+
+    z-index: -1;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+}
+
+.page-cadaster .container-banner .content-banner span{
+    font-size: 9vh;
+    color: rgba(0, 0, 0, 0.365);
+    -webkit-text-stroke: .4vh black;
+    text-shadow: .5vh .7vh 0vh rgba(0, 0, 0, 0.5);
+    font-weight: 900;
+    letter-spacing: 2vh;
+}
+
+.page-cadaster .container-banner .content-banner .box-name {
+    width: 100%;
+    height: auto;
+    margin-top: 10vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-cadaster .container-banner .content-banner .box-name span{
+    width: 90%;
+    color: black;
+    -webkit-text-stroke: .4vh black;
+    text-shadow: .5vh .5vh .2vh rgba(0, 0, 0, 0.533);
+}
+
+.page-cadaster .container-banner .content-banner .box-name span:first-child{
+    font-size: 10vh;
+    font-weight: 600;
+    text-align: start;
+}
+
+.page-cadaster .container-banner .content-banner .box-name span:last-child{
+    font-size: 10vh;
+    font-weight: 600;
+    text-align: end;
+}
+
+.page-cadaster .container-cadaster{
+    width: 40%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    background-color: white;
+}
+
+.page-cadaster .container-cadaster .content-cadaster{
+    width: 100vh;
+    height: 85vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: transparent;
+    box-shadow: .2vh .2vh 2vh rgba(0, 0, 0, 0.500);
+    overflow-y: auto;
+}
+
+.page-cadaster .container-cadaster .content-cadaster .forms-cadaster{
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 4vh;
+    background-color: transparent;
+    box-shadow: .2vh .2vh 2vh rgba(0, 0, 0, 0.500);
+    padding-bottom: 5vh;
+}
+
+.page-cadaster .container-cadaster .content-cadaster .title-cadaster{
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    flex-direction: column;
+    color: rgba(0, 0, 0, 0.365);
+    -webkit-text-stroke: .3vh black;
+    text-shadow: .2vh .3vh 0vh rgba(0, 0, 0, 0.5);
+    font-size: 4.5vh;
+    letter-spacing: .3vh;
+    font-weight: 600;
+    margin-top: 4vh;
+}
+
+.page-cadaster .container-cadaster .content-cadaster .title-info-pessoal{
+    color: rgba(0, 0, 0, 0.765);
+    -webkit-text-stroke: .1vh black;
+    text-shadow: .1vh .1vh 0vh rgba(0, 0, 0, 0.5);
+    font-size: 3.5vh;
+    letter-spacing: .3vh;
+    font-weight: 600;
+    margin-top: 5vh;
+    text-align: center;
+}
+
+.page-cadaster .container-cadaster .content-cadaster .title-info-endereco{
+    color: rgba(0, 0, 0, 0.765);
+    -webkit-text-stroke: .1vh black;
+    text-shadow: .1vh .1vh 0vh rgba(0, 0, 0, 0.5);
+    font-size: 3.5vh;
+    letter-spacing: .3vh;
+    font-weight: 600;
+    margin-top: 6vh;
+}
+
+.page-cadaster .container-cadaster .content-cadaster .title-info-ct{
+    color: rgba(0, 0, 0, 0.765);
+    -webkit-text-stroke: .1vh black;
+    text-shadow: .1vh .1vh 0vh rgba(0, 0, 0, 0.5);
+    font-size: 3.5vh;
+    letter-spacing: .3vh;
+    font-weight: 600;
+    margin-top: 5vh;
+}
+
+.page-cadaster .container-cadaster .content-cadaster .button-label-container{
+    width: 100%;
+    height: 9vh;
+    position: relative;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page-cadaster .container-cadaster .content-cadaster .button-label-container .ct-box-pick{
+    width: 90%;
+    height: 9vh;
+    position: relative;
+    
+    padding:0vh 8vh 0vh 2.5vh;
+    font-size: 2.4vh;
+    border: solid .3vh black;
+    border-bottom:solid .3vh black;
+    border-radius:.6vh;
+    background-color:transparent;
+    transition: .4s;
+    cursor: pointer;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page-cadaster .container-cadaster .content-cadaster .button-label-container .ct-box-pick option{
+    font-size: 2.5vh;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+}
+
+.page-cadaster .container-cadaster .content-cadaster .button-label-container .ct-box-pick option:checked{
+    font-size: 2.5vh;
+    background-color:rgb(203, 203, 203);
+    color: black;
+    font-weight: 700;
+}
+
+
+.page-cadaster .container-cadaster .content-cadaster .button-label-container label{
+    position: absolute;
+    top: 30%;
+    left: 7%;
+    cursor: text;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page-cadaster .container-cadaster .content-cadaster .button-label-container img{
+    position: absolute;
+    width: 3.5vh;
+    height: 3.5vh;
+    top: 30%;
+    right: 8%;
+    cursor: text;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page-cadaster .container-cadaster .content-cadaster .container-comp-num{
+    width: 100%;
+    height: 9vh;
+    position: relative;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page-cadaster .container-cadaster .content-cadaster .button-label-container-num{
+    width: 40%;
+    height: 8.1vh;
+    position: relative;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page-cadaster .container-cadaster .content-cadaster .button-label-container-num label{
+    position: absolute;
+    top: 30%;
+    left: 7%;
+    cursor: text;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page-cadaster .container-cadaster .content-cadaster .button-label-container-num img{
+    position: absolute;
+    width: 3.5vh;
+    height: 3.5vh;
+    top: 30%;
+    right: 13%;
+    cursor: text;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page-cadaster .container-cadaster .content-cadaster .button-label-container-comp{
+    width: 100%;
+    height: 8.1vh;
+    position: relative;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page-cadaster .container-cadaster .content-cadaster .button-label-container-comp label{
+    position: absolute;
+    top: 30%;
+    left: 7%;
+    cursor: text;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page-cadaster .container-cadaster .content-cadaster .button-label-container-comp img{
+    position: absolute;
+    width: 3.5vh;
+    height: 3.5vh;
+    top: 30%;
+    right: 10%;
+    cursor: text;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.labelFocusedNome,
+.labelFocusedNomeResp,
+.labelFocusedTelefone,
+.labelFocusedCity,
+.labelFocusedBairro,
+.labelFocusedRua,
+.labelFocusedComplemento,
+.labelFocusedNumRes,
+.labelFocusedDate{
+    z-index: 1;
+    left: 100%;
+    transform:translateY(-120%);
+    font-weight: 600;
+    font-size: 1.9vh;
+    color: rgb(0, 0, 0);
+    background-color: white;
+    padding: 0vh 2vh 0vh 2vh;
+    transition: .3s;
+}
+
+.labelNotFocusedNome,
+.labelNotFocusedNomeResp,
+.labelNotFocusedTelefone,
+.labelNotFocusedBairro,
+.labelNotFocusedRua,
+.labelNotFocusedComplemento,
+.labelNotFocusedNumRes,
+.labelNotFocusedCity{
+    transform:translateY(0%);
+    font-weight: 500;
+    font-size: 2.2vh;
+    color: rgba(72, 72, 72, 0.86);
+    background-color: rgba(255, 255, 255, 0);
+    padding: 0vh 1vh 0vh 1vh;
+    transition: .3s;
+}
+
+.page-cadaster .container-banner-form .container-cadaster .content-cadaster .redirect-login .question{
+    font-size: 2vh;
+    letter-spacing: 0vh;
+    font-weight: 400;
+    -webkit-text-stroke: 0vh;
+    text-shadow: none;
+    color: rgb(0, 0, 0);
+    transition: .1s;
+    cursor: pointer;
+}
+
+.page-cadaster .container-banner-form .container-cadaster .content-cadaster .redirect-login .question a{
+    font-size: 2vh;
+    text-decoration: none;
+    letter-spacing: 0vh;
+    font-weight: 600;
+    -webkit-text-stroke: 0vh;
+    text-shadow: none;
+    color: rgb(0, 0, 0);
+    transition: .1s;
+    cursor: pointer;
+    margin-left: .7vh;
+}
+
+.page-cadaster .container-banner-form .container-cadaster .content-cadaster .redirect-login .question a:hover{
+    color: rgb(2, 2, 2);
+    transition: .1s;
+    text-decoration: underline;
+}
+
+
+@keyframes softRotateIcons {
+    to{
+        transform: rotate(-10deg);
+    }
+    from{
+        transform: rotate(10deg);
+    }
+}
+
+.page-cadaster .loading-logo{
+    width: 23vh;
+    height: 23vh;
+
+    animation: rotateLogoLoading 1s infinite;
+}
+
+@keyframes rotateLogoLoading {  
+    0%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes exclamaUp {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
+.msg-button-enviar{
+    width: 40vh;
+    height: 5vh;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+
+    border: solid .1vh transparent;
+    color: rgb(255, 255, 255);
+    font-weight:700 ;
+    background-color: rgba(105, 0, 0, 0.9);
+    border-radius: 10vh 2vh 2vh 5vh;
+
+    right: 10vh;
+    bottom: 7vh;
+}
+
+.msg-button-enviar-appear{
+    font-size: 2.2vh;
+    width: 40vh;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+
+    border: solid .1vh transparent;
+    color: rgb(255, 255, 255);
+    font-weight:700 ;
+    background-color: rgba(105, 0, 0, 0.9);
+    border-radius: 10vh 2vh 2vh 5vh;
+
+    right: 10vh;
+    bottom: 7vh;
+
+    animation: animateScaleMsgButton 1s infinite alternate;
+}
+
+.msg-button-enviar-appear::after{
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-left: -1vh solid transparent;
+    border-right: 6vh solid transparent;
+    border-top: 2vh solid rgba(105, 0, 0, 0.9);
+    bottom: -1vh;
+    left: 0vh;
+  }
+
+
+  /* ESTILIZAÇÃO DO POP-UP */
+  .pop-up-container{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    
+    background-color: #00000052;
+
+    z-index: 3;
+}
+
+.pop-up-box{
+    width: 60%;
+    height: 70%;
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    background-color: #ffffff;
+    z-index: 3;
+    animation: popUpAppear 1s normal forwards;
+    box-shadow: .2vh .3vh 1vh black;
+    border-radius: 4vh;
+}
+
+.pop-up-box-close{
+    width: 60%;
+    height: 70%;
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    background-color: #ffffff;
+    z-index: 3;
+    animation: popUpDisappear 1s normal forwards;
+    box-shadow: .2vh .3vh 1vh black;
+    border-radius: 4vh;
+}
+
+.closePage{
+    width: 8vh;
+    height: 8vh;
+
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    cursor: pointer;
+    transition: .2s;
+}
+
+.turnVisibleInfo{
+    display: none;
+}
+
+.closePage:hover{
+    transform: scale(1.15);
+    transition: .2s;
+}
+
+.pop-up-title{
+    width: 100%;
+    height: 5vh;
+
+    text-align: start;
+    margin-bottom: 20vh;
+    margin-left: 5vh;
+}
+.pop-up-title span{
+    font-size: 5vh;
+    font-weight: 600;
+    color: rgb(0, 0, 100);
+}
+
+.pop-up-content {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* PARTE ESQUERDA DO POP-UP */
+.pop-up-content .left {
+    width: 50%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.pop-up-content .left h2{
+    font-size: 3vh;
+    text-align: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pop-up-content .left .pop-up-redes-sociais{
+    text-align: center;
+    position: relative;
+
+    font-size: 2vh;
+    font-weight: 600;
+    margin: 7vh 0vh 3vh 0vh;
+}
+
+.pop-up-content .left .pop-up-redes-sociais::before,
+.pop-up-content .left .pop-up-redes-sociais::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 17vh;
+    border-top: .2vh solid #000;
+}
+
+.pop-up-content .left .pop-up-redes-sociais::before{
+    right: 100%;
+    margin-right: 1.5vh;
+}
+
+.pop-up-content .left .pop-up-redes-sociais::after{
+    left: 100%;
+    margin-left: 1.5vh;
+}
+
+.left .pop-up-icons-redes{
+    width: 100%;
+    height: 5vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 4vh;
+}
+
+.left .pop-up-icons-redes img{
+    background-color: transparent;
+    border-radius: 20%;
+
+    padding: .5vh;
+    width: 7vh;
+    height: 7vh;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.left .pop-up-icons-redes img:hover{
+    background-color: rgb(212, 212, 212);
+}
+
+
+/* PARTE DIREITA DO POP-UP */
+.pop-up-content .right{
+    width: 55%;
+    height: 100%;
+    padding-left: 5vh;
+    padding-right: 5vh;
+    padding-bottom: 2vh;
+    padding-top: 2vh;
+    
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    background-color: rgba(0, 36, 102, 0.596);
+}
+
+.pop-up-content .right .title-right-pop-up{
+    font-size: 3vh;
+    font-weight: 900;
+    border-bottom: .1vh solid black;
+    text-align: center;
+}
+
+.pop-up-content .right ul{
+    list-style-type: none;
+}
+
+.pop-up-content .right ul span{
+    font-size: 3vh;
+    font-weight: 800;
+}
+
+.pop-up-content .right ul li{
+    font-size: 1.7vh;
+    margin-top: .3vh;
+}
+
+@keyframes popUpAppear {
+    0%{
+        transform: scale(0);
+    }
+
+    50%{
+        transform: scale(1.1);
+    }
+
+    75%{
+        transform: scale(0.9);
+    }
+
+    100%{
+        transform: scale(1);
+    }
+}
+
+@keyframes popUpDisappear {
+    0%{
+        transform: scale(1);
+    }
+
+    50%{
+        transform: scale(0.8);
+    }
+
+    75%{
+        transform: scale(1.2);
+    }
+
+    100%{
+        transform: scale(0);
+    }
+}
+
+@keyframes animateScaleMsgButton {
+    0%{
+        transform: scale(1.0);
+    }
+    100%{
+        transform: scale(0.95);
+    }
+}
+
+@keyframes queryInfosAnime {
+    0%{
+        transform: scale(1.0);
+    }
+    100%{
+        transform: scale(1.1);
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1350px) {
+    .page-cadaster header .title{
+        width: 15%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2.8vh;
+        color: white;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) and (max-height: 1400px) {
+    .page-cadaster header .logo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 13vh;
+        height: 13vh;
+    }
+
+    .page-cadaster header .logo img{
+       margin-left: 5vh;
+    }
+
+    .page-cadaster header .title{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2vh;
+        color: white;
+        margin-left: 5vh;
+    }
+
+    .container-banner-form{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .page-cadaster .container-banner{
+        width: 100%;
+        display: none;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .page-cadaster .container-cadaster .content-cadaster{
+        width: 160vh;
+    }
+
+    .page-cadaster .container-banner .content-banner .box-name{
+        display: none;
+    }
+
+    .page-cadaster .container-cadaster{
+        width: 100%;
+        background-color: transparent;
+    }
+
+    .page-cadaster .container-cadaster .content-cadaster .title-info-endereco{
+        text-align: center;
+    }
+
+    .page-cadaster .container-cadaster .content-cadaster .title-info-ct{
+        text-align: center;
+    }
+
+    .msg-button-enviar-appear{
+        width: 30vh;
+        font-size: 1.7vh;
+        right: 1vh;
+    }
+
+    .page-cadaster .container-cadaster .content-cadaster .button-label-container label{
+        top: 36%;
+    }
+
+    .labelNotFocusedNome, .labelNotFocusedNomeResp, .labelNotFocusedTelefone, .labelNotFocusedBairro, .labelNotFocusedRua, .labelNotFocusedComplemento, .labelNotFocusedNumRes, .labelNotFocusedCity{
+        font-size: 1.7vh;
+    }
+
+    .page-cadaster .container-cadaster .content-cadaster .button-label-container-num img{
+        display: none;
+    }
+
+    .page-cadaster .container-cadaster .content-cadaster .button-label-container .ct-box-pick{
+        font-size: 1.7vh;
+
+    }
+    
+    .page-cadaster .container-cadaster .content-cadaster .button-label-container .ct-box-pick option{
+        font-size: 1.2vh;
+    }
+
+    .pop-up-box{
+        width: 80%;
+        margin-top: 5vh;
+        border-radius: 4vh;
+    }
+
+    .pop-up-title{
+        text-align: center;
+        margin-left: 0vh;
+    }
+
+    .pop-up-content .left{
+        width: 100%;
+        border-radius: 4vh;
+    }
+
+    .pop-up-content .right{
+        width: 100%;
+        border-radius: 4vh;
+        display: flex;
+        position: absolute;
+    }
+
+    .pop-up-content .left .pop-up-redes-sociais::before,
+    .pop-up-content .left .pop-up-redes-sociais::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 8vh;
+    border-top: .1vh solid #000;
+    }
+
+    .pop-up-content .right .title-right-pop-up{
+        font-size: 2.5vh;
+        font-weight: 800;
+    }
+
+    
+    .pop-up-content .right ul span{
+        font-size: 2vh;
+        font-weight: 700;
+    }
+    
+    .pop-up-content .right ul li{
+        font-size: 1.4vh;
+        margin-top: .5vh;
+    }
+
+    .closePage{
+        z-index: 1;
+    }
+
+    .turnVisibleInfo{
+        width: 4vh;
+        height: 4vh;
+        display: flex;
+        z-index: 1;
+    
+        position: absolute;
+        left: 2vh;
+        top: 2vh;
+    
+        cursor: pointer;
+        transition: .2s;
+
+        animation: queryInfosAnime 500ms alternate infinite;
+    }
+}
+
+@media (min-width: 370px) and (max-width: 481px) {
+    .page-cadaster header .logo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 12vh;
+        height: 12vh;
+    }
+
+    .page-cadaster header .logo img{
+       margin-left: 2vh;
+    }
+
+    .page-cadaster header .title{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.7vh;
+        color: white;
+        margin-left: 5vh;
+    }
+
+    .container-banner-form{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .page-cadaster .container-banner{
+        width: 100%;
+        display: none;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .page-cadaster .container-cadaster .content-cadaster{
+        width: 160vh;
+    }
+
+    .page-cadaster .container-banner .content-banner .box-name{
+        display: none;
+    }
+
+    .page-cadaster .container-cadaster{
+        width: 100%;
+        background-color: transparent;
+    }
+
+    .page-cadaster .container-cadaster .content-cadaster .title-info-endereco{
+        text-align: center;
+    }
+
+    .page-cadaster .container-cadaster .content-cadaster .title-info-ct{
+        text-align: center;
+    }
+
+    .msg-button-enviar-appear{
+        width: 30vh;
+        font-size: 1.7vh;
+        right: 1vh;
+    }
+
+    .page-cadaster .container-cadaster .content-cadaster .button-label-container label{
+        top: 36%;
+    }
+
+    .labelNotFocusedNome, .labelNotFocusedNomeResp, .labelNotFocusedTelefone, .labelNotFocusedBairro, .labelNotFocusedRua, .labelNotFocusedComplemento, .labelNotFocusedNumRes, .labelNotFocusedCity{
+        font-size: 1.7vh;
+    }
+
+    .page-cadaster .container-cadaster .content-cadaster .button-label-container-num img{
+        display: none;
+    }
+
+    .page-cadaster .container-cadaster .content-cadaster .button-label-container .ct-box-pick{
+        font-size: 1.9vh;
+
+    }
+    
+    .page-cadaster .container-cadaster .content-cadaster .button-label-container .ct-box-pick option{
+        font-size: 1.5vh;
+    }
+
+    .pop-up-box{
+        width: 80%;
+        margin-top: 5vh;
+        border-radius: 4vh;
+    }
+
+    .pop-up-title{
+        text-align: center;
+        margin-left: 0vh;
+    }
+
+    .pop-up-content .left{
+        width: 100%;
+        border-radius: 4vh;
+    }
+
+    .pop-up-content .right{
+        width: 100%;
+        border-radius: 4vh;
+        display: flex;
+        position: absolute;
+    }
+
+    .pop-up-content .left .pop-up-redes-sociais::before,
+    .pop-up-content .left .pop-up-redes-sociais::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 8vh;
+    border-top: .1vh solid #000;
+    }
+
+    .pop-up-content .right .title-right-pop-up{
+        font-size: 2.5vh;
+        font-weight: 800;
+    }
+
+    
+    .pop-up-content .right ul span{
+        font-size: 2vh;
+        font-weight: 700;
+    }
+    
+    .pop-up-content .right ul li{
+        font-size: 1.4vh;
+        margin-top: .5vh;
+    }
+
+    .closePage{
+        z-index: 1;
+    }
+
+    .turnVisibleInfo{
+        width: 4vh;
+        height: 4vh;
+        display: flex;
+        z-index: 1;
+    
+        position: absolute;
+        left: 2vh;
+        top: 2vh;
+    
+        cursor: pointer;
+        transition: .2s;
+
+        animation: queryInfosAnime 500ms alternate infinite;
+    }
+}
+
+@media (max-width: 369px) {
+    .page-cadaster header .logo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 13vh;
+        height: 13vh;
+    }
+
+    .page-cadaster header .logo img{
+       margin-left: 5vh;
+    }
+
+    .page-cadaster header .title{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.8vh;
+        color: white;
+        margin-left: 5vh;
+    }
+
+    .container-banner-form{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .page-cadaster .container-banner{
+        width: 100%;
+        display: none;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .page-cadaster .container-cadaster .content-cadaster{
+        width: 160vh;
+    }
+
+    .page-cadaster .container-banner .content-banner .box-name{
+        display: none;
+    }
+
+    .page-cadaster .container-cadaster{
+        width: 100%;
+        background-color: transparent;
+    }
+
+    .page-cadaster .container-cadaster .content-cadaster .title-info-endereco{
+        text-align: center;
+    }
+
+    .page-cadaster .container-cadaster .content-cadaster .title-info-ct{
+        text-align: center;
+    }
+
+    .msg-button-enviar-appear{
+        width: 30vh;
+        font-size: 1.7vh;
+        right: 1vh;
+    }
+
+    .page-cadaster .container-cadaster .content-cadaster .button-label-container label{
+        top: 36%;
+    }
+
+    .labelNotFocusedNome, .labelNotFocusedNomeResp, .labelNotFocusedTelefone, .labelNotFocusedBairro, .labelNotFocusedRua, .labelNotFocusedComplemento, .labelNotFocusedNumRes, .labelNotFocusedCity{
+        font-size: 1.7vh;
+    }
+
+    .page-cadaster .container-cadaster .content-cadaster .button-label-container-num img{
+        display: none;
+    }
+
+    .page-cadaster .container-cadaster .content-cadaster .button-label-container .ct-box-pick{
+        font-size: 2vh;
+
+    }
+    
+    .page-cadaster .container-cadaster .content-cadaster .button-label-container .ct-box-pick option{
+        font-size: 1.8vh;
+    }
+
+    .pop-up-box{
+        width: 80%;
+        margin-top: 5vh;
+        border-radius: 4vh;
+    }
+
+    .pop-up-title{
+        text-align: center;
+        margin-left: 0vh;
+    }
+
+    .pop-up-content .left{
+        width: 100%;
+        border-radius: 4vh;
+    }
+
+    .pop-up-content .right{
+        width: 100%;
+        border-radius: 4vh;
+        display: flex;
+        position: absolute;
+    }
+
+    .pop-up-content .left .pop-up-redes-sociais::before,
+    .pop-up-content .left .pop-up-redes-sociais::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 8vh;
+    border-top: .1vh solid #000;
+    }
+
+    .pop-up-content .right .title-right-pop-up{
+        font-size: 2.5vh;
+        font-weight: 800;
+    }
+
+    
+    .pop-up-content .right ul span{
+        font-size: 2vh;
+        font-weight: 700;
+    }
+    
+    .pop-up-content .right ul li{
+        font-size: 1.4vh;
+        margin-top: .5vh;
+    }
+
+    .closePage{
+        z-index: 1;
+    }
+
+    .turnVisibleInfo{
+        width: 4vh;
+        height: 4vh;
+        display: flex;
+        z-index: 1;
+    
+        position: absolute;
+        left: 2vh;
+        top: 2vh;
+    
+        cursor: pointer;
+        transition: .2s;
+
+        animation: queryInfosAnime 500ms alternate infinite;
+    }
+}

@@ -1,0 +1,322 @@
+footer{
+    width: 100%;
+    height: 100%;
+    border-top: solid .8vh rgb(255, 0, 0);
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border-bottom: solid .8vh rgb(255, 0, 0);
+    padding-bottom: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .content-footer{
+    width: 100%;
+    height: 17vh;
+    gap: 2vh;
+    font-size: 2.5vh ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .content-footer .sa-box{
+    width: 100%;
+    height: 100%;
+    margin-left: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40%;
+    padding-top: 3vh;
+}
+
+footer .content-footer .sa-box .prefeitura-all{
+    width: auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+footer .content-footer .sa-box .fecam-img{
+    border-radius: 50%;
+    width: 13vh;
+    height: 13vh;
+    display: none;
+}
+
+
+
+footer .content-footer .sa-box .prefeitura-img{
+    width: 16vh;
+    height: 100%;
+}
+footer .content-footer .sa-box .texto{
+    color: rgb(17, 134, 17);
+    text-align: start;
+    text-shadow: 0.7px 0.7px 1px rgb(235, 250, 29);
+    font-size: 3.5vh;
+    letter-spacing: .2vh;
+}
+
+footer .content-footer .sb-box{
+    width: 100%;
+    height: 100%;
+    margin-right: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+footer .content-footer .sc-box{
+    width: 100%;
+    height: 100%;
+    gap: 2vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+footer .content-footer .sb-box .fecam-img{
+    border-radius: 50%;
+    width: 15vh;
+    height: 15vh;
+}
+
+footer .content-footer .icon{
+    width: 10vh;
+    height: 10vh;
+    border-radius: 50%;
+    border: solid .1vh white;
+}
+
+footer .content-footer img{
+    width: 10vh;
+    height: 10vh;
+}
+
+.copy{
+    font-size:1.5vh;
+}
+
+.text span{
+    font-size: 4vh;
+    font-weight: 500;
+    letter-spacing: .1vh;
+}
+.text{
+    text-align: center;
+}
+footer .box-patrocinios{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1vh;
+    border-top: rgba(255, 255, 255, 0.2) solid .1vh;
+    margin-top: 3vh;
+}
+
+footer .box-patrocinios span{
+    font-size: 3vh;
+}
+
+footer .box-patrocinios .logo-patrocinios{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    padding: 0vh 2vh;
+
+
+    width: 100%;
+    padding: 0vh 2vh;
+
+
+    gap: 3vh;
+}
+
+footer .box-patrocinios .logo-patrocinios img{
+    width: 17vh;
+    height: 17vh;
+    border-radius: 1.5vh;
+}
+
+footer .box-patrocinios .logo-patrocinios .cairo{
+    width: 22vh;
+    height: 17vh;
+}
+@media (max-width: 1350px) {
+    footer .box-patrocinios .logo-patrocinios img,
+    footer .box-patrocinios .logo-patrocinios .cairo {
+        width: 16vh; /* Ajuste do tamanho das imagens */
+        height: 16vh;
+    }
+}
+@media (max-width: 1200px) and (max-height: 1400px) {
+    footer .content-footer {
+        flex-direction: column;
+        height: auto;
+        gap: 1vh;
+        font-size: 2vh; /* Ajuste do tamanho da fonte */
+    }
+
+    footer .content-footer .sa-box {
+        gap: 30%;
+    }
+
+    footer .content-footer .sa-box,
+    footer .content-footer .sc-box {
+        width: 95%;
+        margin: 0;
+        justify-content: center;
+    }
+
+    footer .content-footer .sb-box {
+        display: none;
+    }
+
+    footer .content-footer .sc-box {
+        margin-bottom: 3vh;
+    }
+
+    footer .content-footer .sa-box .prefeitura-img,
+    footer .content-footer .sb-box .fecam-img,
+    footer .content-footer img {
+        width: 15vh; /* Ajuste do tamanho das imagens */
+        height: 15vh;
+    }
+
+    footer .content-footer .sa-box .fecam-img{
+        display: flex;
+    }
+
+    footer .content-footer .sa-box .texto {
+        font-size: 2.5vh; /* Ajuste do tamanho do texto */
+    }
+    footer .content-footer .text{
+        font-size: 2vh; /* Ajuste do tamanho do texto */
+    }
+    footer .box-patrocinios .logo-patrocinios {
+        display:grid;
+        grid-template-columns: repeat(3, 1fr); /* 3 colunas */
+        align-items: center;
+        justify-items: center;
+        gap: 1vh;
+    }
+
+    footer .box-patrocinios .logo-patrocinios img,
+    footer .box-patrocinios .logo-patrocinios .cairo {
+        width: 15vh; /* Ajuste do tamanho das imagens */
+        height: 15vh;
+    }
+}
+@media (max-width: 768px) {
+    footer .content-footer {
+        flex-direction: column;
+        height: auto;
+        gap: 1vh;
+        font-size: 2vh; /* Ajuste do tamanho da fonte */
+    }
+
+    footer .content-footer .sa-box {
+        gap: 30%;
+    }
+
+    footer .content-footer .sa-box,
+    footer .content-footer .sc-box {
+        width: 100%;
+        margin: 0;
+        justify-content: center;
+    }
+
+    footer .content-footer .sb-box {
+        display: none;
+    }
+
+    footer .content-footer .sc-box {
+        margin-bottom: 3vh;
+    }
+
+    footer .content-footer .sa-box .prefeitura-img,
+    footer .content-footer .sb-box .fecam-img,
+    footer .content-footer img {
+        width: 15vh; /* Ajuste do tamanho das imagens */
+        height: 15vh;
+    }
+
+    footer .content-footer .sa-box .fecam-img{
+        display: flex;
+    }
+
+    footer .content-footer .sa-box .texto {
+        font-size: 2.5vh; /* Ajuste do tamanho do texto */
+    }
+
+    footer .box-patrocinios .logo-patrocinios {
+        display:grid;
+        grid-template-columns: repeat(3, 1fr); /* 3 colunas */
+        align-items: center;
+        justify-items: center;
+        gap: 1vh;
+    }
+
+    footer .box-patrocinios .logo-patrocinios img,
+    footer .box-patrocinios .logo-patrocinios .cairo {
+        width: 15vh; /* Ajuste do tamanho das imagens */
+        height: 15vh;
+    }
+}
+
+/* Media Query para dispositivos com largura máxima de 480px (celulares pequenos) */
+@media (max-width: 480px) {
+    footer .content-footer {
+        font-size: 1.5vh; /* Ajuste do tamanho da fonte */
+    }
+
+    footer .content-footer .sa-box {
+        gap: 20%;
+    }
+
+    footer .content-footer .sa-box .prefeitura-img,
+    footer .content-footer .sa-box .fecam-img,
+    footer .content-footer img {
+        width: 10vh; /* Ajuste do tamanho das imagens */
+        height: 10vh;
+    }
+
+    footer .content-footer .sa-box .texto {
+        font-size: 2vh; /* Ajuste do tamanho do texto */
+    }
+
+    footer .box-patrocinios .logo-patrocinios {
+        display:grid;
+        grid-template-columns: repeat(3, 1fr); /* 3 colunas */
+        align-items: center;
+        justify-items: center;
+        gap: 1vh;
+    }
+
+    footer .box-patrocinios .logo-patrocinios img,
+    footer .box-patrocinios .logo-patrocinios .cairo {
+        width: 12vh; /* Ajuste do tamanho das imagens */
+        height: 12vh;
+    }
+
+    .copy {
+        font-size: 1.2vh; /* Ajuste do tamanho da fonte */
+    }
+
+    .text span {
+        font-size: 3vh; /* Ajuste do tamanho da fonte */
+    }
+
+    footer .box-patrocinios {
+        font-size: 2.5vh; /* Ajuste do tamanho da fonte */
+    }
+}

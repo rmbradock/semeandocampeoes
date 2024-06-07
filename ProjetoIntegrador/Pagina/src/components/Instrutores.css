@@ -1,0 +1,249 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.content{
+    width: 100%;
+    height: auto;
+    display: flex;
+    position: relative;
+}
+
+.finger{
+    display: none;
+}
+
+.content .box{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 4vh;
+    margin-bottom: 6vh;
+    gap: 2vh;
+}
+
+.content .box span{
+    font-size: 4vh;
+    letter-spacing: .3vh;
+    text-shadow: .18vh .18vh .1vh rgba(0, 0, 0, 0.5);
+    color: black
+}
+
+
+.content .box .box-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30vh;
+    height: 30vh;
+}
+
+.content .box .box-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    box-shadow: 0vh .4vh .9vh rgba(0, 0, 0, 0.9);
+}
+
+.content .box .box-info{
+    width: 70%;
+    height: 100%;
+    text-align: center;
+}
+
+.content .box .box-info span{
+    text-align: left;
+    font-size: 5vh;
+    font-weight: 900;
+    letter-spacing: .4vh;
+}
+
+.content .box .box-info .desc-breve{
+    text-align: center;
+    width: 100%;
+    font-size: 2vh;
+    font-weight: 700;
+}
+
+.content .box .box-info .desc-instrutor{
+    text-align: justify;
+    margin-top: 1vh;
+    font-size: 2.5vh;
+    width: 100%;
+}
+
+
+/* Fotos edições: */
+.ricardo{
+    border: solid .8vh black;
+}
+.dionata{
+    border: solid .8vh rgb(93, 49, 15);
+}
+.Daniel{
+    border: solid .8vh black;
+}
+.Diego{
+    border: solid .8vh purple;
+}
+.Neia{
+    border: solid .8vh rgb(93, 49, 15);
+}
+/* ----------------- */
+
+.content .box .box-info .redes-sociais-instrutor{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+
+    width: 15%;
+    height: auto;
+    margin-top: .5vh;
+
+    border-top: .4vh solid black;
+    gap: 1vh;
+    padding: 1vh;
+}
+
+.content .box .box-info .redes-sociais-instrutor a{
+    width: 3.5vh;
+    height: 3.5vh;
+}
+
+.content .box .box-info .redes-sociais-instrutor img{
+    filter: grayscale(100%);
+    transition: .1s;
+
+    width: 3.5vh;
+    height: 3.5vh;
+}
+
+.content .box .box-info .redes-sociais-instrutor img:hover{
+    filter: grayscale(0%);
+    transition: .1s;
+
+    width: 3.5vh;
+    height: 3.5vh;
+}
+
+@keyframes slippingFinger {
+    0%{
+        top: 20vh;
+        opacity: .8;
+    }
+    30%{
+        opacity: .5; 
+    }
+    100%{
+        transform: translateY(230deg);
+        top: 5vh;
+        opacity: 0.1;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) and (max-height: 1400px) {
+    .content .box{
+        flex-direction: column;
+    }
+
+    .content .box .box-info {
+        width: 90%;
+        font-size: 4vh;
+    }
+
+    .content .box .box-info span{
+        font-size: 4vh;
+    }
+
+    .content .box .box-info .redes-sociais-instrutor{
+        width: 30%;
+    }
+
+    .finger{
+        width: 7vh;
+        height: 7vh;
+        display: flex;
+        position: absolute;
+        top: 20vh;
+        right: 2vh;
+        transform: rotateZ(-60deg);
+
+        animation: slippingFinger 2s normal infinite;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .content .box{
+        flex-direction: column;
+    }
+
+    .content .box .box-info {
+        width: 90%;
+        align-items: center;
+    }
+    
+    .content .box .box-info span{
+        font-size: 3vh;
+    }
+
+    .content .box .box-info .desc-instrutor{
+        text-align: justify;
+        font-size: 2vh;
+    }
+
+    .content .box .box-info .redes-sociais-instrutor{
+        width: 40%;
+    }
+
+    .finger{
+        width: 7vh;
+        height: 7vh;
+        display: flex;
+        position: absolute;
+        top: 20vh;
+        right: 1vh;
+        transform: rotateZ(-60deg);
+
+        animation: slippingFinger 2s normal infinite;
+    }
+}
+
+@media (max-width: 481px) {
+    .content .box{
+        flex-direction: column;
+    }
+
+    .content .box .box-info {
+        width: 90%;
+        align-items: center;
+    }
+    
+    .content .box .box-info span{
+        font-size: 3vh;
+    }
+
+    .content .box .box-info .desc-instrutor{
+        text-align: justify;
+        font-size: 2vh;
+    }
+
+    .content .box .box-info .redes-sociais-instrutor{
+        width: 45%;
+    }
+
+    .finger{
+        width: 6vh;
+        height: 6vh;
+        display: flex;
+        position: absolute;
+        top: 20vh;
+        right: 1vh;
+        transform: rotateZ(-60deg);
+
+        animation: slippingFinger 2s normal infinite;
+    }
+}

@@ -1,0 +1,106 @@
+*{
+    font-family: 'Poppins';
+}
+.react-tel-input{
+    width: 90%;
+    display: flex;
+    align-items: center;
+}
+
+.react-tel-input .form-control{
+    height: 9vh;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.react-tel-input .form-control::placeholder{
+    font-weight: 500;
+    font-size: 2.2vh;
+    color: rgba(72, 72, 72, 0.86);
+    font-family: 'Poppins';
+}
+
+.react-tel-input .selected-flag{
+    width: 6vh;
+    height: 8.5vh;
+    padding: 0 ;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    background-color: transparent;
+    border: 0.3vh solid black;
+    border-right: none;
+    box-shadow: none;
+}
+
+.react-tel-input .flag-dropdown{
+    outline: none;
+    border: none;
+    background-color: transparent;
+
+}
+
+.react-tel-input .selected-flag:hover .flag{
+    transform: scale(1.6);
+    transition: .3s;
+}
+
+.flag-dropdown{
+    background-color:rgba(0, 0, 0, 0.801);
+    border: none;
+}
+
+.react-tel-input .flag-dropdown.open .selected-flag{
+    background-color:transparent;
+    border-radius: .2vh;
+    border: none;
+}
+
+.react-tel-input .flag-dropdown.open{
+    background-color:transparent;
+    border: none;
+    border-radius: .2vh;
+    z-index: 1;
+}
+
+.react-tel-input .flag-dropdown.open .flag{
+    z-index: 2;
+    transform: scale(1.6);
+    transition: .3s ;
+    border-radius: .2vh;
+    z-index: 1;
+}
+
+.react-tel-input .flag{
+    width: 2.15vh;
+    height: 1.5vh;
+    transform: scale(1.4);
+    transition: .3s ;
+    z-index: 1;
+}
+
+
+.react-tel-input .country-list {
+    position: absolute;
+    top: 7vh;
+    left: 0vh;
+
+    width: 50vh;
+    max-height: 30vh;
+
+    padding: 0;
+    margin: 2vh 0 2vh -.2vh;
+    overflow-y: scroll;
+    z-index: 1;
+
+    box-shadow: .2vh .3vh 2vh rgba(0, 0, 0, 0.85);
+    background-color: rgb(255, 255, 255);
+    outline: none;
+    border: solid .7vh black;
+    border-radius: 1vh;
+    list-style: none;
+}

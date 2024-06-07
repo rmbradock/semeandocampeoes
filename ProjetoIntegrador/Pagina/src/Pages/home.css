@@ -1,0 +1,586 @@
+*{
+    outline: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+}
+
+.overlay{
+    z-index: 2;
+    width: 100%;
+    min-height: 100%;
+    
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgba(0, 0, 0, 0.95);
+    position: fixed;
+}
+
+.overlay .loading-top{
+    position: absolute;
+
+    width: 29vh;
+    height: 29vh;
+}
+
+
+.page-home{
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    overflow-x: hidden;
+}   
+
+header{
+    width: 100%;
+    height: 18vh;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    background-color: black;
+    border-bottom: rgb(255, 0, 0) solid .8vh;
+}
+
+header .logo{
+    width: 16vh;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+header .logo img{
+    width: 100%;
+    height: 90%;
+    margin-left: 6vh;
+    border-radius: 50%;
+    border: solid .2vh white;
+    cursor: pointer;
+}
+
+header .title{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    font-size: 3vh;
+    color: white;
+    text-shadow: 0.2vh 0.2vh .2vh rgba(255, 255, 255, 0.272);
+}
+
+header .redes-sociais{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 25%;
+    gap: 11vh;
+}
+
+header .redes-sociais img{
+    width: 7.5vh;
+    height: 7.5vh;
+    transition: .4s;
+    filter: grayscale(100%);
+    transform: scale(.95);
+}
+header .redes-sociais a{
+    width: 7.5vh;
+    height: 7.5vh;
+    transition: .4s;
+}
+
+header .redes-sociais img:hover{
+    filter: drop-shadow(.2vh .2vh 0vh white);
+    transform: scale(1.05);
+    transition: .2s;
+}
+
+/* entre o header e a nav */
+.redes-sociais-nav{
+    width: 25%;
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    gap: 7vh;
+    margin-top: 3vh;
+}
+.redes-sociais-nav img{
+    width: 7.5vh;
+    height: 7.5vh;
+    transition: .4s;
+    filter: grayscale(100%);
+    transform: scale(.95);
+}
+
+.redes-sociais-nav img:hover{
+    filter: drop-shadow(.2vh .2vh 0vh white);
+    transform: scale(1.05);
+    transition: .2s;
+}
+
+header .login-acess{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 10%;
+}
+
+header .login-acess img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 8.5vh;
+    height: 8.5vh;
+    padding: 1.5vh;
+    
+    border-radius: 50%;
+    transition: .3s;
+    background-color: #53535365;
+    cursor: pointer;
+}
+
+header .login-acess img:hover{
+    transform:rotate(360deg);
+    transition: .4s;
+    background-color: #535353;
+}
+
+
+nav{
+    width: 90%;
+    height: 10vh;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 15vh;
+    margin-top: 2vh;
+}
+
+nav button img{
+    width: 3.3vh;
+    height: 3.3vh;
+    transition: .5s;
+}
+
+nav button:hover img{
+    animation: Vibration .5s ease infinite alternate;
+    transition: .5s;
+}
+
+.btn-galeria-de-fotos{
+    width: 30vh;
+    height: 6vh;
+}
+
+.btn-faca-parte{
+    width: 30vh;
+    height: 6vh;
+
+    position: relative;
+    z-index: 1;
+}
+.btn-news{
+    width: 30vh;
+    height: 6vh;
+}
+
+.btn-news{
+    width: 30vh;
+    height: 6vh;
+}
+
+.animation-highlight{
+    width: 100%;
+    height: 6vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    position: absolute;
+    top: -.3vh;
+
+    border-radius: .4vh;
+    animation: participeHighlightBorder 800ms infinite normal;
+    z-index: -1;
+
+}
+
+.btn1{
+    font-size: 2.7vh;
+}
+
+.btn1 img{
+    width: 3.2vh;
+    height: 3.2vh;
+}
+
+.container-home{
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container-home span{
+    color: rgba(0, 0, 0, 0.75);
+    letter-spacing: .4vh;
+    font-size: 7vh;
+    font-weight: bold;
+}
+
+.info-button{
+    width: 86.8%;
+    height: auto;
+    margin-top: 7vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 10vh;
+}
+
+.content{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.infos{
+    width: 86.8%;
+    height: 97vh;
+
+    box-shadow: 0vh 0.4vh 1vh black;
+    margin-bottom: 5vh;
+
+    background-color: #cccccc3f;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#active{
+    animation: changeAbout 1.5s normal forwards;
+}
+#inative{
+    transition: .5s;
+}
+
+@keyframes changeAbout {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes Vibration {
+    0%{
+        transform: rotate(0);
+    }
+
+    50%{
+        transform: rotate(-10deg);
+    }
+
+    100%{
+        transform: rotate(10deg);
+    }
+}
+
+.page-home .loading-logo{
+    width: 23vh;
+    height: 23vh;
+
+    animation: rotateLogoLoading 1s infinite;
+}
+
+@keyframes rotateLogoLoading {  
+    0%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
+
+@keyframes participeHighlightBorder {
+    0%{
+        height: 6vh;
+        transform: scale(1);
+        border: .3vh solid rgba(0, 0, 0, 0.443);
+    }
+    70%{
+        height: 7vh;
+        transform: scale(1.1);
+        border: .3vh solid rgba(0, 0, 0, 0.405);
+    }
+    100%{
+        height: 7vh;
+        transform: scale(1.1);
+        border: .3vh solid rgba(0, 0, 0, 0.05);
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1350px) {
+    header .title{
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2.8vh;
+        color: white;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) and (max-height: 1400px) {
+    header .title{
+        width: 15%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2.3vh;
+        color: white;
+    }
+
+    header .logo img{
+        width: 15vh;
+        height: 15vh;
+    }
+
+    header .login-acess img{
+        width: 7.5vh;
+        height: 7.5vh;
+    }
+    
+    header .redes-sociais{
+        display: none;
+        justify-content: center;
+        align-items: center;
+    
+        width: 100%;
+        gap: 11vh;
+    }
+
+    header .login-acess{
+        margin-right: 4vh;
+    }
+
+    .redes-sociais-nav{
+        display: flex;
+    }
+
+    nav{
+        gap: 3vh;
+    }
+
+    .info-button{
+        gap: 5vh;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    header .title{
+        width: 15%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2.3vh;
+        color: white;
+    }
+
+    header .logo img{
+        width: 15vh;
+        height: 15vh;
+    }
+
+    header .redes-sociais{
+        display: none;
+        justify-content: center;
+        align-items: center;
+    
+        width: 100%;
+        gap: 11vh;
+    }
+
+    header .login-acess{
+        margin-right: 4vh;
+    }
+
+    header .login-acess img{
+        width: 7.5vh;
+        height: 7.5vh;
+    }
+
+    .redes-sociais-nav{
+        display: flex;
+    }
+
+    nav{
+        gap: 3vh;
+    }
+
+    .info-button{
+        gap: 5vh;
+    }
+}
+
+@media (min-width: 370px) and (max-width: 481px) {
+    header .logo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 13vh;
+        height: 13vh;
+        font-size: 2vh;
+        color: white;
+    }
+    header .title{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.7vh;
+        color: white;
+    }
+    header .redes-sociais{
+        display: none;
+    }
+
+    .infos{
+        height: 65vh;
+        overflow-y: auto;
+    }
+
+    .redes-sociais-nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        width: 90%;
+        gap: 7vh;
+
+        border-bottom: rgba(0, 0, 0, 0.325) solid .1vh;
+    }
+    .redes-sociais-nav img{
+        width: 6vh;
+        height: 6vh;
+    }
+
+    header .login-acess{
+        margin-right: 2vh;
+    }
+
+    header .login-acess img{
+        width: 6vh;
+        height: 6vh;
+    }
+
+    .redes-sociais-nav{
+        display: flex;
+    }
+
+    nav{
+        gap: 3vh;
+    }
+
+    nav button img{
+        width: 3vh;
+        height: 3vh;
+    }
+
+    .info-button{
+        gap: 4vh;
+    }
+}
+@media (max-width: 369px) {
+    header .logo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 13vh;
+        height: 13vh;
+        font-size: 2vh;
+        color: white;
+    }
+    header .title{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.7vh;
+        color: white;
+    }
+    header .redes-sociais{
+        display: none;
+    }
+
+    .infos{
+        height: 65vh;
+    }
+
+    .redes-sociais-nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        width: 90%;
+        gap: 7vh;
+
+        border-bottom: rgba(0, 0, 0, 0.325) solid .1vh;
+    }
+    .redes-sociais-nav img{
+        width: 5vh;
+        height: 5vh;
+    }
+
+    header .login-acess{
+        margin-right: 2vh;
+    }
+
+    header .login-acess img{
+        width: 6vh;
+        height: 6vh;
+    }
+
+    .redes-sociais-nav{
+        display: flex;
+    }
+
+    nav{
+        gap: 3vh;
+    }
+
+    nav button img{
+        width: 2.8vh;
+        height: 2.8vh;
+    }
+
+    .info-button{
+        gap: 3vh;
+    }
+}

@@ -1,0 +1,127 @@
+.active{
+    color: white;
+    opacity: 1;
+    transition: .4;
+    transform: scale(1);
+}
+.inative{
+    color: black;
+    opacity: 0.5;
+    transition: .2;
+    transform: scale(.95);
+}
+
+.activect{
+    color: white;
+    opacity: 1;
+    transition: .4;
+    transform: scale(1);
+}
+.inativect{
+    color: black;
+    opacity: 0.5;
+    transition: .2;
+    transform: scale(.95);
+}
+
+@media (min-width: 1025px) and (max-width: 1350px) {
+    .active{
+        font-size: 2.5vh !important;
+    }
+    .inative{
+        font-size:2.5vh !important;
+    }   
+    .activect{
+        font-size: 2.5vh !important;
+    }
+    .inativect{
+        font-size:2.5vh !important;
+    }   
+}
+
+@media (min-width: 768px) and (max-width: 1024px) and (max-height: 14400px) {
+    
+    .galeria-query,
+    .participe-query,
+    .newsLatter-query{
+        font-size: 2vh !important;
+        padding: 1vh !important;
+    }
+    .active{
+        font-size: 2.2vh !important;
+    }
+    .inative{
+        font-size:2.2vh !important;
+    }   
+    .activect{
+        font-size: 1.8vh !important;
+    }
+    .inativect{
+        font-size: 1.8vh !important;
+    }   
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .galeria-query,
+    .participe-query,
+    .newsLatter-query{
+        font-size: 2vh !important;
+        padding: 1vh !important;
+    }
+    .active{
+        font-size: 2.3vh !important;
+    }
+    .inative{
+        font-size: 2.3vh !important;
+    }   
+    .activect{
+        font-size: 1.9vh !important;
+    }
+    .inativect{
+        font-size:1.9vh !important;
+    }   
+}
+
+@media (min-width: 370px) and (max-width: 481px) {
+
+    .galeria-query,
+    .participe-query,
+    .newsLatter-query{
+        font-size: 1.7vh !important;
+        padding: .8vh !important;
+    }
+    .active{
+        font-size: 1.6vh !important;
+    }
+    .inative{
+        font-size: 1.6vh !important;
+    }   
+    .activect{
+        font-size: 1.5vh !important;
+    }
+    .inativect{
+        font-size:1.5vh !important;
+    }   
+}
+
+@media(max-width: 369px) {
+
+    .galeria-query,
+    .participe-query,
+    .newsLatter-query{
+        font-size: 1.6vh !important;
+        padding: .5vh !important;
+    }
+    .active{
+        font-size: 1.6vh !important;
+    }
+    .inative{
+        font-size: 1.6vh !important;
+    }   
+    .activect{
+        font-size: 1.5vh !important;
+    }
+    .inativect{
+        font-size:1.5vh !important;
+    }   
+}

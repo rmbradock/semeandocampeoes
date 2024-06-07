@@ -1,0 +1,308 @@
+.page-galeria-iretama{
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.page-galeria-iretama header{
+    width: 100%;
+    height: 18vh;
+    z-index: 1;
+
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    background-color: black;
+    border-bottom: solid .8vh rgb(255, 0, 0);
+}
+
+.page-galeria-iretama header .logo{
+    width: 15%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.page-galeria-iretama header .logo img{
+    width: 16vh;
+    height: 90%;
+    margin-left: 9vh;
+    border-radius: 50%;
+    border: solid .2vh white;
+}
+
+.page-galeria-iretama header .title{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+
+    letter-spacing: 1vh;
+    word-spacing: 1vh;
+    font-size: 3.5vh;
+    color: white;
+    text-shadow: 0.2vh 0.2vh .2vh rgba(255, 255, 255, 0.272);
+}
+
+.page-galeria-iretama header .title .subtitle{
+    width: 70%;
+    text-align: center;
+
+    font-size: 2.5vh;
+    letter-spacing: .3vh;
+    font-weight: 600;
+    text-shadow: 0vh 0vh 0vh rgb(255, 255, 255);
+}
+
+.page-galeria-iretama .loading-logo{
+    width: 23vh;
+    height: 23vh;
+
+    animation: rotateLogoLoading 1s infinite;
+}
+
+.page-galeria-iretama .container-photos-iretama{
+    width: 100%;
+    height: auto;
+    
+    display: grid;
+    grid-template-columns:50vh 50vh 50vh;
+    grid-template-rows: 50vh 50vh 50vh;
+    align-items: center;
+    justify-content: center;
+    gap: 5vh;
+
+    margin-top:5vh;
+    margin-bottom:5vh;
+}
+
+.page-galeria-iretama .container-photos-iretama .box{
+    width: 100%;
+    height: 100%;
+
+    box-shadow: 0.1vh 0.2vh 1vh rgba(0, 0, 0, 0.850)
+}
+
+.page-galeria-iretama .container-photos-iretama .box img{
+    width: 100%;
+    height: 100%;
+}
+
+.page-galeria-iretama .container-photos-iretama  .box-return{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.page-galeria-iretama .container-photos-iretama  .box-return .title-return{
+    width: 100%;
+    height: 30%;
+
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
+.page-galeria-iretama .container-photos-iretama .box-return .title-return span{
+    font-size: 4vh;
+    font-weight: 600;
+}
+
+.page-galeria-iretama .container-photos-iretama  .box-return .icon-return{
+    width: 100%;
+    height: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: returnLeftFlick 2s infinite alternate;
+}
+
+.page-galeria-iretama .container-photos-iretama  .box-return .icon-return img{
+    width: 15vh;
+    height: 15vh;
+    background-color: #cccccc30;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: .1vh .1vh .3vh black;
+}
+
+.page-galeria-iretama .container-photos-iretama .box-return .icon-return img:hover{
+    background-color: #cccccc90;
+}
+
+@keyframes rotateLogoLoading {  
+    0%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes returnLeftFlick {
+    0%{
+        transform: translateX(0vh);
+    }
+    25%{
+        transform: translateX(-1.5vh);
+    }
+    50%{
+        transform: translateX(0vh);
+    }
+    75%{
+        transform: translateX(-1.5vh);
+    }
+    100%{
+        transform: translateX(0vh);
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1350px) {
+    .page-galeria-iretama header .logo img{
+        width: 14vh;
+        height: 14vh;
+        margin-left: 6vh;
+    }
+
+    .page-galeria-iretama header .title{
+        width: 65%;
+        font-size: 2.3vh;
+    }
+    
+    .page-galeria-iretama header .title .subtitle{
+        Font-size: 2vh;
+        text-align: left;
+        margin-left: 20%;
+        
+    }
+
+    .page-galeria-iretama .container-photos-iretama .box-return .title-return span{
+        text-align: center;
+        font-size: 3vh;
+    }
+
+    .page-galeria-iretama .container-photos-iretama .box-return .icon-return img{
+        width: 12vh;
+        height: 12vh;
+    }
+
+    .page-galeria-iretama .container-photos-iretama{
+        grid-template-columns: 40vh 40vh 40vh;
+        grid-template-rows: 30vh 30vh 30vh;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) and (max-height: 1400px) {
+    .page-galeria-iretama header .logo img{
+        width: 14vh;
+        height: 14vh;
+        margin-left: 3vh;
+    }
+    
+    .page-galeria-iretama header .title{
+        width: 65%;
+        font-size: 2.3vh;
+    }
+    
+    .page-galeria-iretama header .title .subtitle{
+        Font-size: 2vh;
+        text-align: left;
+        margin-left: 10%;
+        
+    }
+
+    .page-galeria-iretama .container-photos-iretama .box-return .title-return span{
+        text-align: center;
+        font-size: 3vh;
+    }
+
+    .page-galeria-iretama .container-photos-iretama .box-return .icon-return img{
+        width: 12vh;
+        height: 12vh;
+    }
+
+    .page-galeria-iretama .container-photos-iretama{
+        grid-template-columns: 29vh 29vh;
+        grid-template-rows: 30vh 30vh 30vh 30vh 30vh;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .page-galeria-iretama header .logo img{
+        width: 14vh;
+        height: 14vh;
+        margin-left: 3vh;
+    }
+    
+    .page-galeria-iretama header .title{
+        width: 65%;
+        font-size: 2.3vh;
+    }
+    
+    .page-galeria-iretama header .title .subtitle{
+        Font-size: 2vh;
+        text-align: left;
+        margin-left: 10%;
+        
+    }
+
+    .page-galeria-iretama .container-photos-iretama .box-return .title-return span{
+        text-align: center;
+        font-size: 3vh;
+    }
+
+    .page-galeria-iretama .container-photos-iretama .box-return .icon-return img{
+        width: 12vh;
+        height: 12vh;
+    }
+
+    .page-galeria-iretama .container-photos-iretama .box-return .title-return{
+        text-align: center;
+    }
+
+    .page-galeria-iretama .container-photos-iretama{
+        grid-template-columns:35vh 35vh;
+        grid-template-rows: 30vh 30vh 30vh 30vh 30vh;
+    }
+}
+
+@media (max-width: 480px) {
+    .page-galeria-iretama header .logo img{
+        width: 13vh;
+        height: 13vh;
+        margin-left: 3vh;
+    }
+    
+    .page-galeria-iretama header .title{
+        width: 65%;
+        font-size: 1.8vh;
+    }
+    
+    .page-galeria-iretama header .title .subtitle{
+        Font-size: 2vh;
+        text-align: left;
+        margin-left: 10%;
+        
+    }
+
+    .page-galeria-iretama .container-photos-iretama .box-return .title-return{
+        text-align: center;
+    }
+
+    .page-galeria-iretama .container-photos-iretama{
+        grid-template-columns:40vh;
+        grid-template-rows: 40vh 40vh 40vh 40vh 40vh 40vh 40vh 40vh 40vh;
+    }
+}
